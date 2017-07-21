@@ -5797,5 +5797,8 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#contenedor-principal {
+  font-family: "Roboto Slab", serif;
+  color: grey; }
 
 /*# sourceMappingURL=main.css.map */
