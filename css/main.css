@@ -5797,8 +5797,20 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-#contenedor-principal {
-  font-family: "Roboto Slab", serif;
-  color: grey; }
+#contenedor-secciones {
+  -webkit-box-shadow: -2px 20px 32px 0px #cccacc;
+  -moz-box-shadow: -2px 20px 32px 0px #cccacc;
+  box-shadow: -2px 20px 32px 0px #cccacc;
+  width: 90%;
+  position: absolute;
+  top: 800px;
+  left: 50px;
+  z-index: 10;
+  background-color: white; }
+
+.box {
+  width: 100%;
+  height: 300px;
+  background-color: #2980b9; }
 
 /*# sourceMappingURL=main.css.map */

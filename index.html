@@ -6,29 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Demo |ThemeIsle </title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/e673371d55.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+	<link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-  	<div id="contenedor-principal">
-  	<header></header>
-  	<section id="inicio"></section>
-  	<section id="quienes-somos"></section>
-  	<section id="productos"></section>
-  	<section id="portafolio"></section>
-  	<section id="equipo"></section>
-  	<section id="clientes"></section>
-  	<section id="newsletter"></section>
-  	<section id="blog"></section>
-  	<section id="contacto"></section>
-  	<footer></footer>
-    	<h1>Hello, world!</h1>
+  <div id="contenedor-principal">
 
-    </div><!--./ contenedor principal -->
+  	<header>
+  		<nav class="navbar navbar-default">
+  			<div class="container">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="#">Hestia Pro</a>
+    			</div>
+
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      				<form class="navbar-form navbar-right">
+        				<button type="submit" class="btn btn-default">BUY NOW</button>
+      				</form>
+      				<ul class="nav navbar-nav navbar-right">
+        				<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FEATURES <span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+            					<li><a href="#">seccion1</a></li>
+            					<li><a href="#">seccion2</a></li>
+            					<li><a href="#">seccion3</a></li>
+          					</ul>
+        				</li>
+        				<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECTIONS <span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+            					<li><a href="#">seccion1</a></li>
+            					<li><a href="#">seccion2</a></li>
+            					<li><a href="#">seccion3</a></li>
+          					</ul>
+        				</li>
+        				<li><a href="#">SHOP</a></li>
+        				<li><a href="#">BLOG</a></li>
+        				<li><a href="#">CONTACT</a></li>
+      				</ul>
+    			</div><!-- /.navbar-collapse -->
+  			</div><!-- /.container-fluid -->
+		</nav>
+  	</header><!--./ header -->
+
+  	<section id="inicio">
+  			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ 
+  				<!-- Wrapper for slides -->
+  				<div class="carousel-inner">
+    				<div class="item active">
+      					<div class="box"></div>
+      					<div class="carousel-caption">
+      						<h3>First Text</h3>
+      					</div>
+    				</div>
+    				<div class="item">
+      					<div class="box"></div>
+      					<div class="carousel-caption">
+      						<h3>Second Text</h3>
+      					</div>
+    				</div>
+  				</div>
+ 
+  				<!-- Controls -->
+  				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    				<span class="glyphicon glyphicon-chevron-left"></span>
+  				</a>
+  				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    				<span class="glyphicon glyphicon-chevron-right"></span>
+  				</a>
+			</div> <!-- Carousel -->
+  	</section><!--./ inicio -->
+
+  	<div id="contenedor-secciones">
+  		<section id="inicio-header">
+  			<div class="container-fluid">
+  				<div class="col-lg-10 col-lg-offset-1">
+  					<p>Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</p>
+  				</div>
+  			</div>
+  		</section><!--./ inicio-header -->
+
+
+  			<section id="quienes-somos"></section><!--./ quienes-somos -->
+  			<section id="productos"></section><!--./ productos -->
+  			<section id="portafolio"></section><!--./ portafolio -->
+  			<section id="equipo"></section><!--./ equipo -->
+  			<section id="clientes"></section><!--./ clientes -->
+  			<section id="newsletter"></section><!--./ newsletter -->
+  			<section id="blog"></section><!--./ blog -->
+  			<section id="contacto"></section><!--./ contacto -->
+  			<footer></footer><!--./ footer -->
+  		</div>
+  	</div><!-- ./ contenedor blanco-->
+
+</div><!--./ contenedor principal -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="sass/assets/javascripts/bootstrap.min.js"></script>
   </body>
 </html>

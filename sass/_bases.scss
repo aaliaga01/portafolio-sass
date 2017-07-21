@@ -1,4 +1,18 @@
 #contenedor-principal{
-	font-family: $title_font;
-	color: $color_font;
+}
+
+#contenedor-secciones {
+	@include box-shadow (-2px 20px 32px 0px rgba(204,202,204,2));
+	width:90%;
+	position:$position_abs;
+	top:800px;
+	left:50px;
+	z-index:10;
+	background-color:$color_white;
+}
+
+.box{
+    width:100%;
+    height:300px;
+    background-color:rgb(41, 128, 185);
 }
