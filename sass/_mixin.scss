@@ -4,5 +4,9 @@
 	box-shadow:$shadow;
 }
 
-@mixin border($border){
+@mixin background(){
+	width:100%;
+    height:550px;
+    background-size: cover;
+    background-position: center;
 }
