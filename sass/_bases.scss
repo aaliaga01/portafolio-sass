@@ -7,27 +7,15 @@ header{
 		color:$color_white;
 		padding-top: 25px;
 	}
-	a{
-		color:$color_white;
-	}
-	a:hover{
-		color:$color_white;
-		background-color:none;
-	}
-}
-
-#wrap {
-	margin-top:-60px;
-	background-color:$color_white;
-	border:$border;
-	border-radius:$border-radius;
-	@include box-shadow (0 6px 15px  black);
-	p {
-		width: $width_parrafo;
-		text-align: $align_center;
-		color:$color_gris;
-		font-size: $size_p_inicio;
-		margin:70px auto;
+	.link-color{
+		font-size:$size_menu;
+		a{
+			color:$color_white;
+		}
+		a:hover{
+			color:$color_white;
+			background-color:transparent;
+		}
 	}
 }
 
@@ -39,7 +27,7 @@ header{
 
 .box2 {
 	background-image:url(../img/img_slider_2.jpg);
-	filter:grayscale(22%);
+	filter:grayscale(35%);
 	@include background;
 }
 
@@ -55,15 +43,100 @@ header{
 		margin-bottom: 70px;
 	}
 	button{
-		background-color: $color_fucsia;
-		color: $color_white;
-		border: none;
+		@include btn_fucsia;
 		padding: 15px 40px;
 	}
 	button:hover{
-		color:$color_white;
-		background-color: $color_fucsia;
+		@include btn_fucsia_hover;
 		@include box-shadow (0px 10px 21px -1px rgba(235,30,102,0.4));
+	}
+}
+
+form {
+	.btn-default{
+		margin-top: -5px;
+		@include btn_fucsia;
+		padding: 12px 20px;
+	}
+
+	.btn-default:hover{
+		@include btn_fucsia_hover;
+		@include box-shadow (0px 10px 21px -1px rgba(235,30,102,0.4));
+	}
+}
+
+#wrap {
+	position: absolute;
+	z-index:1;
+	width: 90%;
+	margin-top:-60px; 
+	background-color:$color_white;
+	border:none;
+	border-radius:$border-radius;
+	@include box-shadow (0 6px 15px  black);
+
+	#iconos{
+		p {
+			width: $width_parrafo;
+			text-align: $align_center;
+			color:$color_gris;
+			font-size: $size_p_inicio;
+			margin:70px auto;
+		}
+		.icon{
+		font-size: 55px;
+		.glyphicon-th{
+			color:$color_fucsia;
+		}
+		.glyphicon-th-list{
+			color:$color_celeste;
+		}
+		.glyphicon-menu-hamburger{
+			color:$color_verde;
+		}
+		h3{
+			font-family: $title_font;
+			font-size: $size_titleh3;
+			color:$color_grisoscuro;
+			font-weight: 700;
+			padding-bottom: 0;
+		}
+		p{
+			font-size: $size_wrap;
+			width: 100%;
+			margin-top: 14px;
+		}
+	}
+	}
+}
+
+#iconos{
+	height:400px;
+}
+
+#quienes-somos{
+	background-image:$fondo_quienessomos;
+	@include fondo_quienessomos; 
+	.ajustar-img{
+		margin-top: 50px;
+		margin-left: 10px;
+		@include ajustar_imagenes;	
+	}
+	.textos-quienessomos{
+		margin-top: 50px;
+		margin-left: 10px;
+		color:$color_white;
+		font-size: $size_p_inicio;
+		h4 {
+			font-family: $title_font;
+			font-size: $size_titleh4;
+			margin-bottom: 40px;
+			font-weight: 700;
+		}
+
 	}
 
 }
+
+
+
