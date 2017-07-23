@@ -9,4 +9,9 @@
     height:550px;
     background-size: cover;
     background-position: center;
+    filter:silver;
+}
+
+@mixin color(){
+	background-color:#e91e63;
 }
